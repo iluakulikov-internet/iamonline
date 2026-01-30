@@ -1,0 +1,28 @@
+.clock {
+    /* margin-left: 40px; */
+}
+
+body {
+    width: 600px;
+    font-family: Helvetica, Arial, sans-serif;
+    color: crimson;
+}
+
+a {
+    color: black;
+}
+
+p, li, .clock{
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11pt;
+    line-height: 120%;
+    /* text-align: center; */
+}
+
+.margin-img {
+    margin-top: 5px;
+}
+
+.margin {
+    margin-left: 100px;
+}

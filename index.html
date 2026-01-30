@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>ilua kulikov</title>
+
+</head>
+<body>  
+    <div class="clock" id="clock"></div>
+    <div>
+        <div class="margin">
+            <img class="margin-img" src="images/img.jpg", width="600">
+            <p>ilua Kulikov, pm at <a href="https://dev.go.yandex/">Yandex City Services</a> 🌆 </br>
+            planet Earth, currently in Moscow
+            </p>
+            
+            <p>projects:</p>
+            <li>Launched a product at SberEducation</li>
+            <li>Launched a Career Center for Bang Bang Education and Ultimate Education group</li>
+            <li>Taught design at IThub Group for 2 years</li>
+
+            <p>one-way ticket (local transport): </br>
+            Moscow $ 0.95 </br>
+            London $ 7.50
+            </p>
+
+            <p>weather: </br>
+            Moscow –20° </br>
+            London 4°
+            </p>
+
+            <p>music playing: GUTS — And The Living Is Easy! </br>
+            <a href="">listen more</a></p>
+
+            <li>not finished.</li>
+            <li>not fixed.</li>
+            <li>shaping my own rhythm as I go.</li>
+            
+            <p>
+            <a href="mailto:iluagrocerystore@gmail.com">e-mail me</a>
+            <a href="https://t.me/iluakulikov">text me</a>
+            <a href="https://t.me/+cx-IbWCTcv4zMDcy">read me</a>
+            </p>
+            
+            <p>today and tomorrow make our world a better place. 2048</p>
+            <img class="margin-img" src="images/img2.jpg", width="600">
+        </div>
+        <script>
+  function updateClock() {
+    const now = new Date();
+    const time = now.toLocaleTimeString([], {
+      hour: '2-digit',
+      minute: '2-digit',
+      second: '2-digit'
+    });
+    document.getElementById('clock').textContent = time;
+  }
+
+  setInterval(updateClock, 1000);
+  updateClock();
+        </script>
+    </div>
+</body>
+</html>

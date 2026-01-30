@@ -3,7 +3,7 @@
 }
 
 body {
-    max-width: 60%;
+    width: 60%;
     font-family: Helvetica, Arial, sans-serif;
     color: crimson;
     -webkit-font-smoothing: antialiased;
@@ -33,37 +33,37 @@ p, li, .clock{
 }
 
 @media (max-width: 450px) {
-    .clock {
-    /* margin-left: 40px; */
-}
+        .clock {
+        /* margin-left: 40px; */
+    }
 
-body {
-    max-width: 100%;
-    font-family: Helvetica, Arial, sans-serif;
-    color: crimson;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-}
+    body {
+        width: 90%;
+        font-family: Helvetica, Arial, sans-serif;
+        color: crimson;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -moz-user-select: none;
+        -khtml-user-select: none;
+    }
 
-.img {
-    width: 100%;
-    margin-top: 10px;
-}
+    .img {
+        width: 100%;
+        margin-top: 10px;
+    }
 
-.boss {
-    padding-left: 30px;
-}
+    .boss {
+        padding-left: 0px;
+    }
 
-a {
-    color: black;
-}
+    a {
+        color: black;
+    }
 
-p, li, .clock{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 11pt;
-    line-height: 120%;
-    /* text-align: center; */
-}
-}
+    p, li, .clock{
+        font-family: Helvetica, Arial, sans-serif;
+        font-size: 11pt;
+        line-height: 120%;
+        /* text-align: center; */
+    }
+    }

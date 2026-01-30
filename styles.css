@@ -3,13 +3,22 @@
 }
 
 body {
-    width: 600px;
+    max-width: 60%;
     font-family: Helvetica, Arial, sans-serif;
     color: crimson;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -moz-user-select: none;
     -khtml-user-select: none;
+}
+
+.img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.boss {
+    padding-left: 30px;
 }
 
 a {
@@ -21,12 +30,4 @@ p, li, .clock{
     font-size: 11pt;
     line-height: 120%;
     /* text-align: center; */
-}
-
-.margin-img {
-    margin-top: 5px;
-}
-
-.margin {
-    margin-left: 100px;
 }

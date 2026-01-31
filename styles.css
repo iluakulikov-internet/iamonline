@@ -10,7 +10,13 @@
     font-style: normal;   /* shape: normal, italic, oblique */
 
     color: crimson;
+    text-align: left;
     font-optical-sizing: auto;   /* optical tracking */ 
+}
+
+::selection {
+  background: #02aff0; /* Меняем цвет и фон выделенного текста */
+  color: #fff;
 }
 
 .clock {
@@ -35,6 +41,10 @@ h1 {
     font-weight: 500;
 }
 
+* + h1 {
+    margin-top: .825rem;
+}
+
 h1 + p {
     margin: 0;
 }
@@ -55,6 +65,7 @@ li {
 
 a {
     color: black;
+    text-decoration: none;
 }
 
 .footnote {
@@ -62,37 +73,15 @@ a {
     color: gray;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
 
-/*
 @media (max-width: 650px) {
-        .clock {
-        margin-top: 5px;
+   
+    .page {
+        max-width: 100%;
     }
 
-    .main {
-        width: 100%;
-        margin: 0px 12px 20px 12px;
-        font-family: Helvetica, Arial, sans-serif;
-        color: crimson;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        -moz-user-select: none;
-        -khtml-user-select: none;
-    }
-
-    .img {
-        width: 100%;
-        margin-top: 5px;
-    }
-    
-    a {
-        color: black;
-    }
-
-    p, li, .clock{
-        font-family: Helvetica, Arial, sans-serif;
-        font-size: 11pt;
-        line-height: 120%;
-        /* text-align: center;
-    }
-*/
+}

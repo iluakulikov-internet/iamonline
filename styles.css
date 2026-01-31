@@ -1,44 +1,77 @@
-.clock {
-    /* margin-left: 40px; */
-}
+/* CSS styles */
 
-body {
-    width: 650px;
-    font-family: Helvetica, Arial, sans-serif;
+:root {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+
+    font-size: 12px;
+    line-height: 1.25;
+
+    font-weight: 500;   /* thickness: normal, light, bold or numeric 400 is normal, 700 is bold, etc. */
+    font-style: normal;   /* shape: normal, italic, oblique */
+
     color: crimson;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -moz-user-select: none;
-    -khtml-user-select: none;
+    font-optical-sizing: auto;   /* optical tracking */ 
 }
 
-.img {
-    width: 100%;
-    margin-top: 10px;
+.clock {
+    margin-bottom: .825rem;
+    font-family: monospace;
 }
 
-.boss {
-    padding-left: 30px;
+.page {
+    max-width: 60%;
+}
+
+h1, 
+p, 
+a,
+ul, 
+li {
+    margin: 0;
+}
+
+h1 {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+h1 + p {
+    margin: 0;
+}
+
+* + p {
+    margin-top: .825rem;
+}
+
+li {
+    list-style: none outside;
+    margin-left: 2rem;
+    padding-left: 0;
+}
+
+* + li {
+  margin-top: .25rem;
 }
 
 a {
     color: black;
 }
 
-p, li, .clock{
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 11pt;
-    line-height: 120%;
-    /* text-align: center; */
+.footnote {
+    font-size: 9px;
+    color: gray;
 }
 
+
+/*
 @media (max-width: 650px) {
         .clock {
-        /* margin-left: 40px; */
+        margin-top: 5px;
     }
 
-    body {
-        width: 90%;
+    .main {
+        width: 100%;
+        margin: 0px 12px 20px 12px;
         font-family: Helvetica, Arial, sans-serif;
         color: crimson;
         -webkit-font-smoothing: antialiased;
@@ -49,13 +82,9 @@ p, li, .clock{
 
     .img {
         width: 100%;
-        margin-top: 10px;
+        margin-top: 5px;
     }
-
-    .boss {
-        padding-left: 0px;
-    }
-
+    
     a {
         color: black;
     }
@@ -64,6 +93,6 @@ p, li, .clock{
         font-family: Helvetica, Arial, sans-serif;
         font-size: 11pt;
         line-height: 120%;
-        /* text-align: center; */
+        /* text-align: center;
     }
-    }
+*/

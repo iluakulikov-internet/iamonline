@@ -3,52 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>ilua kulikov</title>
 
+    <title>ilua's world</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>  
     <div class="clock" id="clock"></div>
-    <div>
-        <div class="boss">
-            <img class="img" src="images/img.jpg">
-            <p>ilua Kulikov, pm at <a href="https://dev.go.yandex/">Yandex City Services</a> 🌆 </br>
-            planet Earth, currently in Moscow
-            </p>
+    <div class="page">
+         <!--  <img class="img" src="images/img.jpg"> -->
+        <h1>Ilua Kulikov, independent designer and pm at <a href="https://dev.go.yandex/">Yandex City Services</a></h1>
+        <p>planet Earth, currently in Moscow</p>
             
-            <p>projects:</p>
-            <li>Launched a product at SberEducation</li>
-            <li>Launched a Career Center for Bang Bang Education and Ultimate Education group</li>
-            <li>Taught design at IThub Group for 2 years</li>
+        <p>projects:</p>
+        <ul>
+            <li>launched product at SberEducation</li>
+            <li>launched product at Bang Bang Education and Ultimate Education Group</li>
+            <li>taught design at IThub College for 2 years</li>
+        </ul>
+        
+        <p>one-way ticket (local transport):</p>
+        <ul>
+            <li>Moscow $ 0.95</li>
+            <li>London $ 7.50</li>
+        </ul>    
 
-            <p>one-way ticket (local transport): </br>
-            Moscow $ 0.95 </br>
-            London $ 7.50
-            </p>
+        <p>weather: </br>
+        <ul>
+            <li>Moscow –20°</li>
+            <li>London 4°</li>
+        </ul>    
 
-            <p>weather: </br>
-            Moscow –20° </br>
-            London 4°
-            </p>
+        <p>music playing: GUTS — And The Living Is Easy! </br>
+        <a href="">listen more</a></p>
 
-            <p>music playing: GUTS — And The Living Is Easy! </br>
-            <a href="">listen more</a></p>
-
+        <ul>
             <li>not finished.</li>
             <li>not fixed.</li>
             <li>shaping my own rhythm as I go.</li>
+        </ul>
             
-            <p>
-            <a href="mailto:iluagrocerystore@gmail.com">e-mail, </a>
-            <a href="https://t.me/iluakulikov">text, </a>
-            <a href="https://t.me/+cx-IbWCTcv4zMDcy">read me</a>
-            </p>
+        <p>
+            <a href="mailto:iluagrocerystore@gmail.com">e-mail me</a>
+            <a href="https://t.me/iluakulikov">tg: iluakulikov</a>
+            <a href="https://t.me/+cx-IbWCTcv4zMDcy">/ channel</a></p>
             
-            <p>today and tomorrow make our world a better place. 2048</p>
-            <img class="img" src="images/img2.jpg">
-        </div>
-        <script>
-  function updateClock() {
+        <p class="footnote">today and tomorrow make our world a better place. 2048</p>
+         <!-- <img class="img" src="images/img2.jpg"> -->
+    </div>
+
+    <script>
+    function updateClock() {
     const now = new Date();
     const time = now.toLocaleTimeString([], {
       hour: '2-digit',
@@ -56,11 +64,10 @@
       second: '2-digit'
     });
     document.getElementById('clock').textContent = time;
-  }
+    }
 
-  setInterval(updateClock, 1000);
-  updateClock();
-        </script>
-    </div>
+    setInterval(updateClock, 1000);
+    updateClock();
+    </script>
 </body>
 </html>

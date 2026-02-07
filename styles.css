@@ -14,11 +14,6 @@
     font-optical-sizing: auto;   /* optical tracking */ 
 }
 
-::selection {
-  background: #02aff0; /* Меняем цвет и фон выделенного текста */
-  color: #fff;
-}
-
 body {
     /* display: block; */
 }

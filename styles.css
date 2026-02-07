@@ -9,7 +9,7 @@
     font-weight: 500;   /* thickness: normal, light, bold or numeric 400 is normal, 700 is bold, etc. */
     font-style: normal;   /* shape: normal, italic, oblique */
 
-    color: crimson;
+    color: black;
     text-align: left;
     font-optical-sizing: auto;   /* optical tracking */ 
 }
@@ -19,13 +19,18 @@
   color: #fff;
 }
 
+body {
+    /* display: block; */
+}
+
 .clock {
     margin-bottom: .825rem;
     font-family: monospace;
+    width: 10%;
 }
 
 .page {
-    max-width: 60%;
+    width: 100%;
 }
 
 h1, 
@@ -34,6 +39,7 @@ a,
 ul, 
 li {
     margin: 0;
+    max-width: 600px;
 }
 
 h1 {
@@ -46,16 +52,16 @@ h1 {
 }
 
 h1 + p {
-    margin: 0;
+    margin-top: 0.25rem;
 }
 
 * + p {
-    margin-top: .825rem;
+    margin-top: 1rem;
 }
 
 li {
     list-style: none outside;
-    margin-left: 2rem;
+    margin-left: 0.25rem;
     padding-left: 0;
 }
 
@@ -65,22 +71,74 @@ li {
 
 a {
     color: black;
-    text-decoration: none;
+    /* text-decoration: none; */
 }
 
 .footnote {
-    font-size: 9px;
+    font-size: 8px;
     color: gray;
 }
 
 img {
     display: block;
+    width: 20%;
+}
+
+.table-scroll {
     width: 100%;
+    overflow-x: scroll;
+}
+
+table {
+    margin-top: .825rem;
+    width: max-content;
+    min-width: 100%;
+    border-collapse: collapse;
+  }
+
+th {
+    font-weight: 800;
+    line-height: 1.25;
+    text-align: left;
+    vertical-align: top;
+    white-space: nowrap;
+    background-color: aliceblue;
+}
+
+td {
+    padding: 0 20px 0 0;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: right;
+    vertical-align: top;
+    white-space: nowrap;
+    width: 80px;
 }
 
 @media (max-width: 650px) {
-   
+    .clock {
+    margin-bottom: .825rem;
+    font-family: monospace;
+    width: 100%;
+    }   
+
+    body {
+    display: block;
+    }
+
     .page {
+        width: 100%;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    h1, 
+    p, 
+    a,
+    ul, 
+    li {
         max-width: 100%;
     }
 
